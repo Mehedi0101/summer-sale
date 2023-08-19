@@ -14,26 +14,26 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
         tailwind.config = {
-          theme: {
-            extend: {
-              colors: {
-                blackish: '#111111',
-                hotpink: '#E527B2',
-                deeppink: '#a82986',
-                star: '#FFC107',
-                lightgray: '#11111180'
-              }
+            theme: {
+                extend: {
+                    colors: {
+                        blackish: '#111111',
+                        hotpink: '#E527B2',
+                        deeppink: '#a82986',
+                        star: '#FFC107',
+                        lightgray: '#11111199'
+                    }
+                }
             }
-          }
         }
-      </script>
+    </script>
 
     <!-- google font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700;800&display=swap"
         rel="stylesheet">
-    
+
     <!-- styles -->
     <link rel="stylesheet" href="styles/index.css">
 </head>
@@ -44,13 +44,18 @@
     <header>
 
         <!-- banner started -->
-        <div class="bg-[#F9F6E2] flex lg:px-10 px-2 lg:py-10 py-5 justify-center items-center lg:gap-10 md:gap-5 gap-2 text-blackish">
+        <div
+            class="bg-[#F9F6E2] flex lg:px-10 px-2 lg:py-10 py-5 justify-center items-center lg:gap-10 md:gap-5 gap-2 text-blackish lg:min-h-screen">
             <div class="md:w-2/5 w-1/2 text-center">
                 <p class="lg:text-xl md:text-lg text-base font-medium lg:mb-5 md:mb-3 mb-1">---SALE FEVER---</p>
-                <h1 class="lg:text-4xl md:text-3xl text-2xl font-bold lg:mb-10 mb-6">Purchase TK 200 or <br>above & get <span class="text-hotpink">20% off</span></h1>
-                <div class="flex md:flex-row flex-col justify-center items-center gap-2 lg:text-base md:text-sm text-xs">
+                <h1 class="lg:text-4xl md:text-3xl text-2xl font-bold lg:mb-10 mb-6">Purchase TK 200 or <br>above & get
+                    <span class="text-hotpink">20% off</span>
+                </h1>
+                <div
+                    class="flex md:flex-row flex-col justify-center items-center gap-2 lg:text-base md:text-sm text-xs">
                     <p class="font-medium">Use Promo Code</p>
-                    <button class="font-semibold bg-hotpink hover:bg-deeppink text-white transition-colors px-8 py-2 rounded-lg">SELL200</button>
+                    <button
+                        class="font-semibold bg-hotpink hover:bg-deeppink text-white transition-colors px-8 py-2 rounded-lg">SELL200</button>
                 </div>
             </div>
             <div class="md:w-2/5 w-1/2">
@@ -63,7 +68,91 @@
     <!-- header section ended -->
 
     <main>
-        
+        <section class="w-5/6 mx-auto flex lg:flex-row flex-col-reverse
+         justify-between gap-5">
+
+            <!-- merchandise -->
+            <div class="">
+                <!-- kitchenware -->
+                <div class="mt-20">
+                    <h2 class="text-2xl font-semibold text-blackish mb-10">Kitchenware</h2>
+                    <div class="flex md:flex-row flex-col justify-between gap-4 flex-1">
+                        <!-- product-1 -->
+                        <div class="card card-compact md:w-full w-60 px-8 py-8 md:mx-0 mx-auto flex flex-col justify-center items-center border-2 border-transparent cursor-pointer hover:border-hotpink transition-colors">
+                            <figure><img src="/images/prod1.png" alt="" />
+                            </figure>
+                            <div class="card-body flex flex-col justify-center items-center">
+                                <div class="rating">
+                                    <input type="radio" name="rating-1" class="mask mask-star bg-star" />
+                                    <input type="radio" name="rating-1" class="mask mask-star bg-star" />
+                                    <input type="radio" name="rating-1" class="mask mask-star bg-star" checked />
+                                    <input type="radio" name="rating-1" class="mask mask-star bg-star" />
+                                    <input type="radio" name="rating-1" class="mask mask-star bg-star" />
+                                </div>
+                                <h2 class="card-title xl:text-lg text-base font-semibold text-blackish">K. Accessories</h2>
+                                <h3 class="xl:text-base text-sm text-lightgray">39.00 TK</h3>
+                            </div>
+                        </div>
+                        <!-- product-2 -->
+                        <div class="card card-compact md:w-full w-60 px-8 py-8 md:mx-0 mx-auto flex flex-col justify-center items-center border-2 border-transparent cursor-pointer hover:border-hotpink transition-colors">
+                            <figure><img src="/images/prod1.png" alt="" />
+                            </figure>
+                            <div class="card-body flex flex-col justify-center items-center">
+                                <div class="rating">
+                                    <input type="radio" name="rating-1" class="mask mask-star bg-star" />
+                                    <input type="radio" name="rating-1" class="mask mask-star bg-star" />
+                                    <input type="radio" name="rating-1" class="mask mask-star bg-star" checked />
+                                    <input type="radio" name="rating-1" class="mask mask-star bg-star" />
+                                    <input type="radio" name="rating-1" class="mask mask-star bg-star" />
+                                </div>
+                                <h2 class="card-title xl:text-lg text-base font-semibold text-blackish">K. Accessories</h2>
+                                <h3 class="xl:text-base text-sm text-lightgray">39.00 TK</h3>
+                            </div>
+                        </div>
+                        <!-- product-3 -->
+                        <div class="card card-compact md:w-full w-60 px-8 py-8 md:mx-0 mx-auto flex flex-col justify-center items-center border-2 border-transparent cursor-pointer hover:border-hotpink transition-colors">
+                            <figure><img src="/images/prod1.png" alt="" />
+                            </figure>
+                            <div class="card-body flex flex-col justify-center items-center">
+                                <div class="rating">
+                                    <input type="radio" name="rating-1" class="mask mask-star bg-star" />
+                                    <input type="radio" name="rating-1" class="mask mask-star bg-star" />
+                                    <input type="radio" name="rating-1" class="mask mask-star bg-star" checked />
+                                    <input type="radio" name="rating-1" class="mask mask-star bg-star" />
+                                    <input type="radio" name="rating-1" class="mask mask-star bg-star" />
+                                </div>
+                                <h2 class="card-title xl:text-lg text-base font-semibold text-blackish">K. Accessories</h2>
+                                <h3 class="xl:text-base text-sm text-lightgray">39.00 TK</h3>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <!-- min-[1150px]:flex-row -->
+            <!-- cart -->
+            <div class="mt-20 text-blackish">
+                <h3 class="xl:text-lg text-base font-medium mb-2">Have coupon?</h3>
+                <div class="flex mb-10 gap-y-2 max-[1150px]:flex-col min-[1024px]">
+                    <input type="text"
+                        class="lg:w-full w-40 py-2 px-3 font-semibold border-y border-l max-[1150px]:border border-lightgray focus:outline-none rounded-s-lg max-[1150px]:rounded-lg"
+                        placeholder="Coupon code">
+                    <button
+                        class="lg:w-full w-40 font-semibold bg-hotpink hover:bg-deeppink text-white transition-colors px-8 py-2 rounded-e-lg max-[1150px]:rounded-lg">Apply</button>
+                </div>
+                <ol class="list-decimal xl:text-lg text-base font-medium ml-6 space-y-1 mb-4">
+                    <li>Home Cooker</li>
+                    <li>Home Cooker</li>
+                    <li>Home Cooker</li>
+                </ol>
+                <div class="xl:text-lg text-base font-medium">
+                    <p>Total price: 257.00TK</p>
+                    <p>Discount : 51.40TK</p>
+                    <p>Total: 205.60 TK</p>
+                </div>
+            </div>
+
+        </section>
     </main>
 
 </body>
