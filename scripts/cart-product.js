@@ -1,5 +1,5 @@
-function addToCart(elements){
-    
+function addToCart(elements) {
+
     // adding to the cart list
     const productToAdd = elements.children[1].children[1].innerText;
     const li = document.createElement('li');
@@ -12,15 +12,20 @@ function addToCart(elements){
     // total price without discount
     const productPrice = parseFloat(elements.children[1].children[2].children[0].innerText);
     const previousPrice = parseFloat(priceWithoutDiscount.innerHTML);
-    const currentPrice = previousPrice+productPrice;
+    currentPrice = previousPrice + productPrice;
     priceWithoutDiscount.innerHTML = currentPrice.toFixed(2);
 
     // coupon button enabling
-    if( currentPrice >= 200 ){
+    if (currentPrice >= 200) {
         couponButton.removeAttribute('disabled');
     }
 
     // total price with discount
-    priceWithDiscount.innerHTML = currentPrice.toFixed(2);
-    console.log(productPrice);
+    if (couponInUse) {
+        discountCalculation();
+    }
+    else {
+        priceWithDiscount.innerHTML = currentPrice.toFixed(2);
+    }
+
 }
