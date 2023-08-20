@@ -1,4 +1,7 @@
 purchaseCompleteButton.addEventListener('click',function(){
-    window.location.href='index.html';
+    cartList.innerHTML = '';
+    priceWithDiscount.innerHTML = '0.00';
+    priceWithoutDiscount.innerHTML = '0.00';
+    discount.innerHTML = '0.00';
 })
 
