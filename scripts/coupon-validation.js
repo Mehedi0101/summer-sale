@@ -11,5 +11,4 @@ couponField.addEventListener('keyup',function(e){
         }
         couponValidate();
     }
-    console.log('eee');
 })
