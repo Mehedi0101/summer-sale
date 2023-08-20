@@ -21,7 +21,7 @@
                         hotpink: '#E527B2',
                         deeppink: '#a82986',
                         star: '#FFC107',
-                        lightgray: '#11111199'
+                        lightgray: '#11111180'
                     }
                 }
             }
@@ -38,7 +38,7 @@
     <link rel="stylesheet" href="styles/index.css">
 </head>
 
-<body class="font-work-sans max-w-screen-2xl mx-auto">
+<body class="font-work-sans bg-gray-200 max-w-screen-2xl mx-auto">
 
     <!-- header section started -->
     <header>
@@ -69,86 +69,229 @@
 
     <main>
         <section class="w-5/6 mx-auto flex lg:flex-row flex-col-reverse
-         justify-between gap-5">
+         justify-between gap-10 pb-20">
 
             <!-- merchandise -->
-            <div class="">
+            <div class="flex-1">
                 <!-- kitchenware -->
-                <div class="mt-20">
-                    <h2 class="text-2xl font-semibold text-blackish mb-10">Kitchenware</h2>
-                    <div class="flex md:flex-row flex-col justify-between gap-4 flex-1">
+                <div class="lg:mt-20 md:mt-8 text-blackish">
+                    <h2 class="text-2xl font-semibold mb-5">Kitchenware</h2>
+                    <div class="flex md:flex-row flex-col justify-between gap-4">
                         <!-- product-1 -->
-                        <div class="card card-compact md:w-full w-60 px-8 py-8 md:mx-0 mx-auto flex flex-col justify-center items-center border-2 border-transparent cursor-pointer hover:border-hotpink transition-colors">
-                            <figure><img src="/images/prod1.png" alt="" />
+                        <div
+                            class="card card-compact md:w-full w-3/4 max-[320px]:w-full p-4 md:mx-0 mx-auto bg-white flex flex-col justify-center shadow-gray-500 shadow-sm hover:shadow-hotpink hover:shadow-md cursor-pointer rounded-md hover:scale-105 active:scale-100 transition-all">
+                            <figure class="w-full bg-gray-300 rounded-md mb-4"><img src="images/prod1.png" alt="" />
                             </figure>
-                            <div class="card-body flex flex-col justify-center items-center">
-                                <div class="rating">
+                            <div class="flex flex-col justify-center items-center">
+                                <div class="rating mb-1">
                                     <input type="radio" name="rating-1" class="mask mask-star bg-star" />
                                     <input type="radio" name="rating-1" class="mask mask-star bg-star" />
                                     <input type="radio" name="rating-1" class="mask mask-star bg-star" checked />
                                     <input type="radio" name="rating-1" class="mask mask-star bg-star" />
                                     <input type="radio" name="rating-1" class="mask mask-star bg-star" />
                                 </div>
-                                <h2 class="card-title xl:text-lg text-base font-semibold text-blackish">K. Accessories</h2>
+                                <h2 class="card-title xl:text-lg text-base font-semibold text-blackish">K. Accessories
+                                </h2>
                                 <h3 class="xl:text-base text-sm text-lightgray">39.00 TK</h3>
                             </div>
                         </div>
                         <!-- product-2 -->
-                        <div class="card card-compact md:w-full w-60 px-8 py-8 md:mx-0 mx-auto flex flex-col justify-center items-center border-2 border-transparent cursor-pointer hover:border-hotpink transition-colors">
-                            <figure><img src="/images/prod1.png" alt="" />
+                        <div
+                            class="card card-compact md:w-full w-3/4 max-[320px]:w-full p-4 md:mx-0 mx-auto bg-white flex flex-col justify-center shadow-gray-500 shadow-sm hover:shadow-hotpink hover:shadow-md cursor-pointer rounded-md hover:scale-105 active:scale-100 transition-all">
+                            <figure class="w-full bg-gray-300 rounded-md mb-4"><img src="images/prod2.png" alt="" />
                             </figure>
-                            <div class="card-body flex flex-col justify-center items-center">
-                                <div class="rating">
-                                    <input type="radio" name="rating-1" class="mask mask-star bg-star" />
-                                    <input type="radio" name="rating-1" class="mask mask-star bg-star" />
-                                    <input type="radio" name="rating-1" class="mask mask-star bg-star" checked />
-                                    <input type="radio" name="rating-1" class="mask mask-star bg-star" />
-                                    <input type="radio" name="rating-1" class="mask mask-star bg-star" />
+                            <div class="flex flex-col justify-center items-center">
+                                <div class="rating mb-1">
+                                    <input type="radio" name="rating-2" class="mask mask-star bg-star" checked />
+                                    <input type="radio" name="rating-2" class="mask mask-star bg-star" />
+                                    <input type="radio" name="rating-2" class="mask mask-star bg-star" />
+                                    <input type="radio" name="rating-2" class="mask mask-star bg-star" />
+                                    <input type="radio" name="rating-2" class="mask mask-star bg-star" />
                                 </div>
-                                <h2 class="card-title xl:text-lg text-base font-semibold text-blackish">K. Accessories</h2>
-                                <h3 class="xl:text-base text-sm text-lightgray">39.00 TK</h3>
+                                <h2 class="card-title xl:text-lg text-base font-semibold text-blackish">Cutting Board
+                                </h2>
+                                <h3 class="xl:text-base text-sm text-lightgray">25.00 TK</h3>
                             </div>
                         </div>
                         <!-- product-3 -->
-                        <div class="card card-compact md:w-full w-60 px-8 py-8 md:mx-0 mx-auto flex flex-col justify-center items-center border-2 border-transparent cursor-pointer hover:border-hotpink transition-colors">
-                            <figure><img src="/images/prod1.png" alt="" />
+                        <div
+                            class="card card-compact md:w-full w-3/4 max-[320px]:w-full p-4 md:mx-0 mx-auto bg-white flex flex-col justify-center shadow-gray-500 shadow-sm hover:shadow-hotpink hover:shadow-md cursor-pointer rounded-md hover:scale-105 active:scale-100 transition-all">
+                            <figure class="w-full bg-gray-300 rounded-md mb-4"><img src="images/prod3.png" alt="" />
                             </figure>
-                            <div class="card-body flex flex-col justify-center items-center">
-                                <div class="rating">
-                                    <input type="radio" name="rating-1" class="mask mask-star bg-star" />
-                                    <input type="radio" name="rating-1" class="mask mask-star bg-star" />
-                                    <input type="radio" name="rating-1" class="mask mask-star bg-star" checked />
-                                    <input type="radio" name="rating-1" class="mask mask-star bg-star" />
-                                    <input type="radio" name="rating-1" class="mask mask-star bg-star" />
+                            <div class="flex flex-col justify-center items-center">
+                                <div class="rating mb-1">
+                                    <input type="radio" name="rating-3" class="mask mask-star bg-star" />
+                                    <input type="radio" name="rating-3" class="mask mask-star bg-star" />
+                                    <input type="radio" name="rating-3" class="mask mask-star bg-star" />
+                                    <input type="radio" name="rating-3" class="mask mask-star bg-star" checked />
+                                    <input type="radio" name="rating-3" class="mask mask-star bg-star" />
                                 </div>
-                                <h2 class="card-title xl:text-lg text-base font-semibold text-blackish">K. Accessories</h2>
-                                <h3 class="xl:text-base text-sm text-lightgray">39.00 TK</h3>
+                                <h2 class="card-title xl:text-lg text-base font-semibold text-blackish">Home Cooker
+                                </h2>
+                                <h3 class="xl:text-base text-sm text-lightgray">49.00 TK</h3>
                             </div>
                         </div>
-
+                    </div>
+                </div>
+                <!-- Sportswear -->
+                <div class="lg:mt-20 md:mt-8 text-blackish">
+                    <h2 class="text-2xl font-semibold mb-5">Sportswear</h2>
+                    <div class="flex md:flex-row flex-col justify-between gap-4">
+                        <!-- product-4 -->
+                        <div
+                            class="card card-compact md:w-full w-3/4 max-[320px]:w-full p-4 md:mx-0 mx-auto bg-white flex flex-col justify-center shadow-gray-500 shadow-sm hover:shadow-hotpink hover:shadow-md cursor-pointer rounded-md hover:scale-105 active:scale-100 transition-all">
+                            <figure class="w-full bg-gray-300 rounded-md mb-4"><img src="images/prod4.png" alt="" />
+                            </figure>
+                            <div class="flex flex-col justify-center items-center">
+                                <div class="rating mb-1">
+                                    <input type="radio" name="rating-4" class="mask mask-star bg-star" />
+                                    <input type="radio" name="rating-4" class="mask mask-star bg-star" checked />
+                                    <input type="radio" name="rating-4" class="mask mask-star bg-star" />
+                                    <input type="radio" name="rating-4" class="mask mask-star bg-star" />
+                                    <input type="radio" name="rating-4" class="mask mask-star bg-star" />
+                                </div>
+                                <h2 class="card-title xl:text-lg text-base font-semibold text-blackish">Sports Black Cap
+                                </h2>
+                                <h3 class="xl:text-base text-sm text-lightgray">49.00 TK</h3>
+                            </div>
+                        </div>
+                        <!-- product-5 -->
+                        <div
+                            class="card card-compact md:w-full w-3/4 max-[320px]:w-full p-4 md:mx-0 mx-auto bg-white flex flex-col justify-center shadow-gray-500 shadow-sm hover:shadow-hotpink hover:shadow-md cursor-pointer rounded-md hover:scale-105 active:scale-100 transition-all">
+                            <figure class="w-full bg-gray-300 rounded-md mb-4"><img src="images/prod5.png" alt="" />
+                            </figure>
+                            <div class="flex flex-col justify-center items-center">
+                                <div class="rating mb-1">
+                                    <input type="radio" name="rating-5" class="mask mask-star bg-star" />
+                                    <input type="radio" name="rating-5" class="mask mask-star bg-star" />
+                                    <input type="radio" name="rating-5" class="mask mask-star bg-star" />
+                                    <input type="radio" name="rating-5" class="mask mask-star bg-star" checked />
+                                    <input type="radio" name="rating-5" class="mask mask-star bg-star" />
+                                </div>
+                                <h2 class="card-title xl:text-lg text-base font-semibold text-blackish">Full Jersey Set
+                                </h2>
+                                <h3 class="xl:text-base text-sm text-lightgray">69.00 TK</h3>
+                            </div>
+                        </div>
+                        <!-- product-6 -->
+                        <div
+                            class="card card-compact md:w-full w-3/4 max-[320px]:w-full p-4 md:mx-0 mx-auto bg-white flex flex-col justify-center shadow-gray-500 shadow-sm hover:shadow-hotpink hover:shadow-md cursor-pointer rounded-md hover:scale-105 active:scale-100 transition-all">
+                            <figure class="w-full bg-gray-300 rounded-md mb-4"><img src="images/prod6.png" alt="" />
+                            </figure>
+                            <div class="flex flex-col justify-center items-center">
+                                <div class="rating mb-1">
+                                    <input type="radio" name="rating-6" class="mask mask-star bg-star" />
+                                    <input type="radio" name="rating-6" class="mask mask-star bg-star" />
+                                    <input type="radio" name="rating-6" class="mask mask-star bg-star" checked />
+                                    <input type="radio" name="rating-6" class="mask mask-star bg-star" />
+                                    <input type="radio" name="rating-6" class="mask mask-star bg-star" />
+                                </div>
+                                <h2 class="card-title xl:text-lg text-base font-semibold text-blackish">Sports cades
+                                </h2>
+                                <h3 class="xl:text-base text-sm text-lightgray">159.00 TK</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Furniture -->
+                <div class="lg:mt-20 md:mt-8 text-blackish">
+                    <h2 class="text-2xl font-semibold mb-5">Furniture</h2>
+                    <div class="flex md:flex-row flex-col justify-between gap-4">
+                        <!-- product-7 -->
+                        <div
+                            class="card card-compact md:w-full w-3/4 max-[320px]:w-full p-4 md:mx-0 mx-auto bg-white flex flex-col justify-center shadow-gray-500 shadow-sm hover:shadow-hotpink hover:shadow-md cursor-pointer rounded-md hover:scale-105 active:scale-100 transition-all">
+                            <figure class="w-full bg-gray-300 rounded-md mb-4"><img src="images/prod7.png" alt="" />
+                            </figure>
+                            <div class="flex flex-col justify-center items-center">
+                                <div class="rating mb-1">
+                                    <input type="radio" name="rating-7" class="mask mask-star bg-star" />
+                                    <input type="radio" name="rating-7" class="mask mask-star bg-star" />
+                                    <input type="radio" name="rating-7" class="mask mask-star bg-star" />
+                                    <input type="radio" name="rating-7" class="mask mask-star bg-star" checked />
+                                    <input type="radio" name="rating-7" class="mask mask-star bg-star" />
+                                </div>
+                                <h2 class="card-title xl:text-lg text-base font-semibold text-blackish text-center">Single Relax Chair
+                                </h2>
+                                <h3 class="xl:text-base text-sm text-lightgray">185.00 TK</h3>
+                            </div>
+                        </div>
+                        <!-- product-8 -->
+                        <div
+                            class="card card-compact md:w-full w-3/4 max-[320px]:w-full p-4 md:mx-0 mx-auto bg-white flex flex-col justify-center shadow-gray-500 shadow-sm hover:shadow-hotpink hover:shadow-md cursor-pointer rounded-md hover:scale-105 active:scale-100 transition-all">
+                            <figure class="w-full bg-gray-300 rounded-md mb-4"><img src="images/prod8.png" alt="" />
+                            </figure>
+                            <div class="flex flex-col justify-center items-center">
+                                <div class="rating mb-1">
+                                    <input type="radio" name="rating-8" class="mask mask-star bg-star" />
+                                    <input type="radio" name="rating-8" class="mask mask-star bg-star" />
+                                    <input type="radio" name="rating-8" class="mask mask-star bg-star" />
+                                    <input type="radio" name="rating-8" class="mask mask-star bg-star" />
+                                    <input type="radio" name="rating-8" class="mask mask-star bg-star" checked />
+                                </div>
+                                <h2 class="card-title xl:text-lg text-base font-semibold text-blackish">Arm Chair
+                                </h2>
+                                <h3 class="xl:text-base text-sm text-lightgray">299.00 TK</h3>
+                            </div>
+                        </div>
+                        <!-- product-9 -->
+                        <div
+                            class="card card-compact md:w-full w-3/4 max-[320px]:w-full p-4 md:mx-0 mx-auto bg-white flex flex-col justify-center shadow-gray-500 shadow-sm hover:shadow-hotpink hover:shadow-md cursor-pointer rounded-md hover:scale-105 active:scale-100 transition-all">
+                            <figure class="w-full bg-gray-300 rounded-md mb-4"><img src="images/prod9.png" alt="" />
+                            </figure>
+                            <div class="flex flex-col justify-center items-center">
+                                <div class="rating mb-1">
+                                    <input type="radio" name="rating-9" class="mask mask-star bg-star" />
+                                    <input type="radio" name="rating-9" class="mask mask-star bg-star" />
+                                    <input type="radio" name="rating-9" class="mask mask-star bg-star"/>
+                                    <input type="radio" name="rating-9" class="mask mask-star bg-star" />
+                                    <input type="radio" name="rating-9" class="mask mask-star bg-star" checked  />
+                                </div>
+                                <h2 class="card-title xl:text-lg text-base font-semibold text-blackish">Flexible Sofa
+                                </h2>
+                                <h3 class="xl:text-base text-sm text-lightgray">339.00 TK</h3>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-            <!-- min-[1150px]:flex-row -->
+
             <!-- cart -->
-            <div class="mt-20 text-blackish">
-                <h3 class="xl:text-lg text-base font-medium mb-2">Have coupon?</h3>
-                <div class="flex mb-10 gap-y-2 max-[1150px]:flex-col min-[1024px]">
-                    <input type="text"
-                        class="lg:w-full w-40 py-2 px-3 font-semibold border-y border-l max-[1150px]:border border-lightgray focus:outline-none rounded-s-lg max-[1150px]:rounded-lg"
-                        placeholder="Coupon code">
-                    <button
-                        class="lg:w-full w-40 font-semibold bg-hotpink hover:bg-deeppink text-white transition-colors px-8 py-2 rounded-e-lg max-[1150px]:rounded-lg">Apply</button>
+            <div class="lg:mt-20 mt-10 text-blackish border ">
+                <div class="border p-5 border-gray-300 bg-white mb-10 rounded-md">
+                    <h3 class="xl:text-lg text-base font-medium mb-2 lg:text-left text-center">Have coupon?</h3>
+                    <div class="flex gap-y-2 max-[1150px]:flex-col min-[1024px]">
+                        <input type="text"
+                            class="lg:w-full w-40 py-2 px-3 font-semibold border-y border-l lg:mx-0 mx-auto lg:text-left text-center max-[1150px]:border border-lightgray focus:outline-none rounded-s-lg max-[1150px]:rounded-lg"
+                            placeholder="Coupon code">
+                        <button
+                            class="lg:w-auto w-40 font-semibold bg-hotpink hover:bg-deeppink text-white transition-colors px-8 py-2 lg:mx-0 mx-auto rounded-e-lg max-[1150px]:rounded-lg disabled:bg-gray-500" disabled>Apply</button>
+                    </div>
                 </div>
-                <ol class="list-decimal xl:text-lg text-base font-medium ml-6 space-y-1 mb-4">
-                    <li>Home Cooker</li>
-                    <li>Home Cooker</li>
-                    <li>Home Cooker</li>
-                </ol>
-                <div class="xl:text-lg text-base font-medium">
-                    <p>Total price: 257.00TK</p>
-                    <p>Discount : 51.40TK</p>
-                    <p>Total: 205.60 TK</p>
+                <div class="border border-gray-300 p-5 bg-white rounded-md lg:sticky lg:top-0">
+                    <ol
+                        class="list-decimal xl:text-lg text-base font-medium ml-8 lg:space-y-1 mb-4 flex lg:flex-col flex-row lg:flex-nowrap flex-wrap gap-x-10">
+                    </ol>
+                    <div
+                        class="xl:text-lg text-base font-medium flex lg:flex-col flex-row justify-between gap-2 max-[320px]:flex-col max-[320px]:items-center mb-10">
+                        <p>Total price: <span class="text-lightgray">0.00TK</span></p>
+                        <p>Discount : <span class="text-lightgray">0.00TK</span></p>
+                        <p>Total: <span class="text-lightgray">0.00TK</span></p>
+                    </div>
+                    <button
+                        class="font-semibold bg-hotpink hover:bg-deeppink text-white transition-colors px-8 py-2 rounded-lg block mx-auto -mb-10 disabled:bg-gray-500"
+                        onclick="my_modal_5.showModal()" disabled>Make
+                        Purchase</button>
+                    <dialog id="my_modal_5" class="modal modal-bottom sm:modal-middle">
+                        <form method="dialog" class="modal-box">
+                            <img src="images/congo.png" class="mx-auto w-1/4" alt="">
+                            <h3 class="font-bold md:text-2xl text-xl text-center">Congratulations</h3>
+                            <p class="py-3 text-lightgray text-center">Purchased product successfully</p>
+                            <div class="modal-action">
+                                <!-- if there is a button in form, it will close the modal -->
+                                <button class="font-semibold bg-hotpink hover:bg-deeppink text-white transition-colors px-8 py-2 rounded-lg block mx-auto">Go Home</button>
+                            </div>
+                        </form>
+                    </dialog>
                 </div>
             </div>
 
