@@ -9,6 +9,7 @@ const couponField = document.getElementById('coupon-field');
 const invalidText = document.getElementById('invalid-text');
 const couponUsedText = document.getElementById('coupon-used-text')
 const purchaseCompleteButton = document.getElementById('purchase-complete-button');
+const ratings = document.getElementsByClassName('rating');
 
 
 purchaseButton.setAttribute('disabled',true);
@@ -18,6 +19,8 @@ let currentPrice = 0.00;
 let couponInUse = false;
 let discountAmount = 0.00;
 
+
+// functions
 function discountCalculation() {
     discountAmount = parseFloat(((currentPrice * 20) / 100).toFixed(2));
     discount.innerHTML = discountAmount.toFixed(2);
